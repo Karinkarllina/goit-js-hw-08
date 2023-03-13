@@ -42,7 +42,7 @@ function onFormSubmit(event) {
 
 
 function populateTextarea() {
-    
+
 const savedMessage = JSON.parse(localStorage.getItem("formKey"));
     
     
