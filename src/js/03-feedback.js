@@ -14,7 +14,7 @@ formEl.addEventListener('input', throttle(onTextareaInput, 500));
 
 formEl.addEventListener('submit', onFormSubmit);
 
-populateTextarea(); 
+
 
 
 function onTextareaInput(event) {
@@ -39,11 +39,11 @@ function onFormSubmit(event) {
 };
 
 
-
+const savedMessage = JSON.parse(localStorage.getItem("formKey"));
 
 function populateTextarea() {
 
-    const savedMessage = JSON.parse(localStorage.getItem("formKey"));
+    
     
     if (savedMessage) {
         emailEl.value = savedMessage.email;
@@ -52,3 +52,4 @@ function populateTextarea() {
 
 } 
 
+populateTextarea(); 
