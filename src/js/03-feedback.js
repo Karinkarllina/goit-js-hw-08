@@ -50,5 +50,5 @@ function populateTextarea() {
         inputEl.value = savedMessage.message;
     }
 
-}
+} 
 
