@@ -18,7 +18,7 @@ formEl.addEventListener('submit', onFormSubmit);
 populateTextarea(); 
 
 function onTextareaInput(event) {
-    formData = {
+    const formData = {
     email: emailEl.value,
     message: inputEl.value,
     };
