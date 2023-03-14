@@ -36,7 +36,7 @@ function onFormSubmit(event) {
 
     console.log({ email: email.value, message: message.value });
     event.currentTarget.reset();
-    localStorage.removeItem('formKey');
+    localStorage.removeItem(formKey);
 };
 
 
